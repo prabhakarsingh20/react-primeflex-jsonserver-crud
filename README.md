@@ -146,18 +146,52 @@ npm run lint
 ## Project Structure
 
 ```text
-src/
-├── components/
-├── pages/
-├── routes/
-├── hooks/
-├── services/
-├── App.jsx
-├── main.jsx
+crud-2-app/
 
-db.json
-package.json
-README.md
+├── public/
+
+├── src/
+│
+├── api/
+│   └── axios.js
+│
+├── components/
+│   └── Header.jsx
+│
+├── layouts/
+│   └── MainLayout.jsx
+│
+├── pages/
+│   ├── AddEditUserList.jsx
+│   └── UsersList.jsx
+│
+├── validations/
+│   └── userSchema.js
+│
+├── App.jsx
+├── index.css
+├── main.jsx
+│
+├── db.json
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── eslint.config.js
+├── README.md
+└── .gitignore
+```
+
+### Folder Explanation
+
+- **api/** → Axios configuration and API calls
+- **components/** → Reusable UI components
+- **layouts/** → Shared application layouts
+- **pages/** → Page-level screens
+- **validations/** → Yup validation schemas
+- **db.json** → Mock backend for JSON Server
+- **App.jsx** → Root component
+- **main.jsx** → React application entry point
+
 ```
 
 ---
@@ -186,3 +220,4 @@ DELETE → Remove User
 ---
 
 Built with React 19 + Vite
+```
